@@ -2,3 +2,5 @@ langchain
 langchain-ollama
 pydantic
 rich
+click
+streamlit
