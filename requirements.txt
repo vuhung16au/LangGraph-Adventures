@@ -1,6 +1,36 @@
+# Core LangChain and LangGraph dependencies
 langchain
 langchain-ollama
+langchain-community
+langgraph
+
+# Web scraping and HTTP
+beautifulsoup4
+requests
+
+# Vector stores and embeddings
+chromadb
+sentence-transformers
+faiss-cpu
+
+# Data processing
+numpy
+pandas
+
+# CLI and UI
 pydantic
 rich
 click
 streamlit
+
+# Development and Jupyter
+jupyter
+ipykernel
+
+# Environment and configuration
+python-dotenv
+
+# Additional useful packages for development
+tqdm
+matplotlib
+seaborn
