@@ -257,6 +257,38 @@ User Question → Retrieve Documents → Generate Answer → Return Result
 3. **Retrieval Count**: Adjust the number of retrieved documents (default: 4)
 4. **Temperature**: Lower temperature for more focused answers
 
+## Testing
+
+### Quick Test
+
+Run a quick test to verify basic functionality:
+
+```bash
+./quick-test.sh
+```
+
+### Comprehensive Test
+
+Run a full end-to-end test of the entire system:
+
+```bash
+./end-to-end-test.sh
+```
+
+### Manual Testing
+
+```bash
+# Test Python components
+python3 test_rag.py
+
+# Test CLI functionality
+python3 rag_cli.py status
+python3 rag_cli.py list-models
+
+# Test URL validation
+python3 url_helper.py
+```
+
 ## Troubleshooting
 
 ### Common Issues
@@ -353,5 +385,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📖 Additional Documentation
 
 - **[USAGE.md](USAGE.md)** - Detailed usage guide with examples and troubleshooting
+- **[TESTING.md](TESTING.md)** - Comprehensive testing guide and scripts
 - **[url_helper.py](url_helper.py)** - URL validation and fixing utility
 - **[test_rag.py](test_rag.py)** - System testing and verification
+- **[end-to-end-test.sh](end-to-end-test.sh)** - Comprehensive end-to-end testing
+- **[quick-test.sh](quick-test.sh)** - Quick functionality testing
