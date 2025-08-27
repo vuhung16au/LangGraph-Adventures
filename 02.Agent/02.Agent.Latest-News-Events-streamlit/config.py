@@ -28,7 +28,7 @@ NEWS_CATEGORIES = {
         "icon": "📊"
     },
     "🇦🇺 ABC Australia News": {
-        "prompt": "Search for the latest 5 news headlines from ABC Australia (abc.net.au). Look for current breaking news, featured stories. For each headline, provide: a) the title, b) a brief summary (under 50 words). Make sure to search specifically for 'ABC Australia news' or 'abc.net.au latest news' to get the Australian ABC, not the US ABC.",
+        "prompt": "Search for the latest 5 news headlines from ABC Australia (abc.net.au). For each headline, provide: a) the title, b) a brief summary (under 50 words). Make sure to search specifically for 'ABC Australia news' or 'abc.net.au latest news' to get the Australian ABC, not the US ABC.",
         "description": "Latest news from ABC Australia",
         "icon": "🇦🇺"
     }

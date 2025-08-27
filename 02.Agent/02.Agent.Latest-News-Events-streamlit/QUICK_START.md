@@ -4,7 +4,7 @@
 
 ### 1. Test Your Setup
 ```bash
-cd /Users/vuhung/Desktop/LangGraph-Adventures/02.Agent/02.Agent.Latest-News-Events-streamlit
+cd /path/to/your/project
 python test_setup.py
 ```
 

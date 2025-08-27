@@ -66,7 +66,8 @@ def test_env_file():
     """Test if environment file exists"""
     print("\n🔍 Testing environment file...")
     
-    env_path = Path("/Users/vuhung/Desktop/LangGraph-Adventures/02.Agent/.env.local")
+    # Check for environment file in parent directory
+    env_path = Path(__file__).parent.parent / ".env.local"
     if env_path.exists():
         print("✅ Environment file found")
         return True
@@ -99,8 +100,8 @@ def main():
     if passed == total:
         print("🎉 All tests passed! Your setup is ready.")
         print("\n🚀 To run the app:")
-        print("   cd /Users/vuhung/Desktop/LangGraph-Adventures/02.Agent/02.Agent.Latest-News-Events-streamlit")
-        print("   ./run_app.sh")
+        print("   streamlit run app.py")
+        print("   # or use: ./run_app.sh")
     else:
         print("❌ Some tests failed. Please check the errors above.")
         print("\n💡 Common solutions:")

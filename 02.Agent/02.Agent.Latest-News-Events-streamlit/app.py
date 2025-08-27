@@ -9,7 +9,9 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 # Setup environment
 from dotenv import load_dotenv
-load_dotenv(Path("/Users/vuhung/Desktop/LangGraph-Adventures/02.Agent/.env.local"))
+# Load environment from parent directory
+env_path = Path(__file__).parent.parent / ".env.local"
+load_dotenv(env_path)
 
 # Import the agent components
 from langchain.tools import tool
