@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment variables (keep sample tracked)
+.env
+.env.local
+.env.production
+!.env-sample
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+
+# Type checking / linter caches
+.mypy_cache/
+.ruff_cache/
+
+# Hypothesis
+.hypothesis/
+
+# Databases / checkpoints
+*.db
+*.sqlite
+*.sqlite3
+
+# Vector stores
+chroma_db/
+faiss_index/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+tmp/
+temp/
+
+# Project specific
+Prompt.md 
+

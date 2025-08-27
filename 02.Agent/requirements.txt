@@ -1,0 +1,7 @@
+dotenv
+langchain
+langgraph
+langchain-tavily
+langgraph-checkpoint-sqlite
+langchain[google-genai]
+langchain-community

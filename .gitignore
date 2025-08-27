@@ -65,3 +65,7 @@ faiss_index/
 tmp/
 temp/
 chat_history.json
+
+
+# Project specific
+Prompt.md
