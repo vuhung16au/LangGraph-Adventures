@@ -2,45 +2,44 @@
 # 
 # ✅ SUCCESSFULLY INSTALLED:
 # - All core packages (streamlit, langchain, langgraph, chromadb, etc.)
-# - RAGatouille 0.0.9.post2 (with all dependencies)
 # - Additional dependencies: llama-index, faiss-cpu, fast-pytorch-kmeans, onnx, srsly
 #
-# 🛠️ WORKAROUND IMPLEMENTED:
-# - RAGatouille depends on a private 'voyager' package not available on PyPI
-# - Created mock voyager module at .venv/lib/python3.13/site-packages/voyager/__init__.py
-# - Mock provides Index, Space, StorageDataType classes that RAGatouille requires
-# - This allows RAGatouille to import and function normally
-#
 # 📋 INSTALLATION STATUS:
-# - RAGatouille: ✅ Fully functional with mock voyager dependency
-# - RAGPretrainedModel: ✅ Importable and usable
-# - RAGTrainer: ✅ Importable and usable
 # - Core RAG functionality: ✅ Available
+# - LangChain ecosystem: ✅ Fully functional
+# - Vector databases: ✅ ChromaDB available
+# - Embedding models: ✅ Sentence transformers available
 #
 # ⚠️ NOTES:
-# - RAGatouille shows warning about migrating to PyLate backend in v0.0.10
-# - Some advanced features may be limited by mock voyager implementation
-# - For production use, consider contacting RAGatouille maintainers for full voyager access
+# - RAGatouille removed due to dependency conflicts with current LangChain versions
+# - Alternative RAG implementations can be built using the available packages
 
-streamlit==1.49.1
-langchain==0.3.26
-langchain-community==0.3.26
-langchain-google-genai==2.0.0
-langgraph==0.6.6
-langchain-tavily==0.2.11
-python-dotenv==1.1.1
-google-generativeai==0.7.2
-tavily-python==0.7.11
-tiktoken==0.11.0
-chromadb==1.0.20
-langchainhub==0.1.21
-beautifulsoup4==4.13.5
-numpy==2.1.0
-pydantic==2.11.7
-youtube-transcript-api==1.2.2
-pytube==15.0.0
-cohere==5.17.0
-ipywidgets==8.1.7
-sentence-transformers==5.1.0
-langchain-text-splitters==0.3.8
-ragatouille  # ✅ Installed successfully with mock voyager workaround
+streamlit>=1.49.0
+langchain>=0.3.20
+langchain-community>=0.3.20
+langchain-google-genai>=2.0.0
+langgraph>=0.6.0
+langchain-tavily>=0.2.0
+python-dotenv>=1.1.0
+google-generativeai>=0.7.0
+tavily-python>=0.7.0
+tiktoken>=0.11.0
+chromadb>=1.0.0
+langchainhub>=0.1.0
+beautifulsoup4>=4.13.0
+numpy>=2.0.0
+pydantic>=2.10.0
+youtube-transcript-api>=1.2.0
+pytube>=15.0.0
+cohere>=5.0.0
+ipywidgets>=8.0.0
+sentence-transformers>=5.0.0
+langchain-text-splitters>=0.3.0
+langchain-cohere>=0.4.0
+
+# Additional useful packages for RAG
+llama-index>=0.13.0
+faiss-cpu>=1.12.0
+fast-pytorch-kmeans>=0.2.0
+onnx>=1.19.0
+srsly>=2.5.0

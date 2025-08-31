@@ -5,7 +5,7 @@ This document provides detailed information about the technologies, frameworks, 
 ## 🏗️ Core Framework
 
 ### **LangChain**
-- **Version**: 0.3.27+
+- **Version**: 0.3.20+
 - **Purpose**: Core RAG framework and orchestration
 - **Key Features**:
   - Document loaders and processors
@@ -17,7 +17,7 @@ This document provides detailed information about the technologies, frameworks, 
 - **Documentation**: [https://python.langchain.com/](https://python.langchain.com/)
 
 ### **LangChain Community**
-- **Version**: 0.3.29+
+- **Version**: 0.3.20+
 - **Purpose**: Community-maintained integrations
 - **Key Features**:
   - Additional document loaders
@@ -26,7 +26,7 @@ This document provides detailed information about the technologies, frameworks, 
 - **Documentation**: [https://python.langchain.com/docs/integrations/](https://python.langchain.com/docs/integrations/)
 
 ### **LangGraph**
-- **Version**: 0.6.6+
+- **Version**: 0.6.0+
 - **Purpose**: Complex workflow orchestration
 - **Key Features**:
   - Stateful workflows
@@ -38,7 +38,7 @@ This document provides detailed information about the technologies, frameworks, 
 ## 🤖 AI Models & Providers
 
 ### **Google Generative AI (Gemini)**
-- **Version**: 0.8.5+
+- **Version**: 0.7.0+
 - **Purpose**: Primary LLM provider for generation and embeddings
 - **Models Used**:
   - **Chat Model**: `gemini-2.5-flash` (generation)
@@ -51,7 +51,7 @@ This document provides detailed information about the technologies, frameworks, 
 - **Documentation**: [https://ai.google.dev/](https://ai.google.dev/)
 
 ### **LangChain Google GenAI Integration**
-- **Version**: 2.0.10+
+- **Version**: 2.0.0+
 - **Purpose**: Seamless integration between LangChain and Google Gemini
 - **Key Features**:
   - `ChatGoogleGenerativeAI` for chat completions
@@ -60,10 +60,29 @@ This document provides detailed information about the technologies, frameworks, 
   - Streaming support
 - **Documentation**: [https://python.langchain.com/docs/integrations/llms/google_generative_ai](https://python.langchain.com/docs/integrations/llms/google_generative_ai)
 
+### **Cohere**
+- **Version**: 5.0.0+
+- **Purpose**: Alternative LLM provider and reranking
+- **Key Features**:
+  - Text generation and embeddings
+  - Reranking capabilities for retrieval optimization
+  - Multilingual support
+  - Command models for structured outputs
+- **Documentation**: [https://cohere.ai/](https://cohere.ai/)
+
+### **LangChain Cohere Integration**
+- **Version**: 0.4.0+
+- **Purpose**: Seamless integration between LangChain and Cohere
+- **Key Features**:
+  - `ChatCohere` for chat completions
+  - `CohereEmbeddings` for vector embeddings
+  - Reranking tools for retrieval optimization
+- **Documentation**: [https://python.langchain.com/docs/integrations/llms/cohere](https://python.langchain.com/docs/integrations/llms/cohere)
+
 ## 🗄️ Vector Database
 
 ### **ChromaDB**
-- **Version**: 1.0.20+
+- **Version**: 1.0.0+
 - **Purpose**: Vector database for similarity search and document storage
 - **Key Features**:
   - In-memory and persistent storage options
@@ -73,10 +92,20 @@ This document provides detailed information about the technologies, frameworks, 
   - Easy integration with LangChain
 - **Documentation**: [https://www.trychroma.com/](https://www.trychroma.com/)
 
+### **FAISS (Facebook AI Similarity Search)**
+- **Version**: 1.12.0+
+- **Purpose**: High-performance similarity search library
+- **Key Features**:
+  - GPU and CPU implementations
+  - Various index types (IVF, HNSW, etc.)
+  - Scalable similarity search
+  - Integration with PyTorch
+- **Documentation**: [https://github.com/facebookresearch/faiss](https://github.com/facebookresearch/faiss)
+
 ## 🔍 Search & Retrieval
 
 ### **Tavily**
-- **Version**: 0.7.11+
+- **Version**: 0.7.0+
 - **Purpose**: Web search integration for real-time information retrieval
 - **Key Features**:
   - Real-time web search
@@ -86,7 +115,7 @@ This document provides detailed information about the technologies, frameworks, 
 - **Documentation**: [https://tavily.com/](https://tavily.com/)
 
 ### **LangChain Tavily Integration**
-- **Version**: 0.2.11+
+- **Version**: 0.2.0+
 - **Purpose**: Seamless integration between LangChain and Tavily
 - **Key Features**:
   - `TavilySearchResults` for web search
@@ -96,8 +125,18 @@ This document provides detailed information about the technologies, frameworks, 
 
 ## 🛠️ Development Tools
 
+### **Streamlit**
+- **Version**: 1.49.0+
+- **Purpose**: Web application framework for RAG demos and interfaces
+- **Key Features**:
+  - Interactive web applications
+  - Real-time data visualization
+  - Easy deployment
+  - Rich widget library
+- **Documentation**: [https://streamlit.io/](https://streamlit.io/)
+
 ### **LangSmith**
-- **Version**: 0.1.21+
+- **Version**: 0.1.0+
 - **Purpose**: Observability, debugging, and monitoring platform
 - **Key Features**:
   - Request/response tracing
@@ -116,11 +155,10 @@ This document provides detailed information about the technologies, frameworks, 
   - Rich output display
 - **Documentation**: [https://jupyter.org/](https://jupyter.org/)
 
-
 ## 📊 Data Processing
 
 ### **BeautifulSoup4**
-- **Version**: 4.13.5+
+- **Version**: 4.13.0+
 - **Purpose**: Web scraping and HTML/XML parsing
 - **Key Features**:
   - HTML/XML parsing
@@ -130,7 +168,7 @@ This document provides detailed information about the technologies, frameworks, 
 - **Documentation**: [https://www.crummy.com/software/BeautifulSoup/](https://www.crummy.com/software/BeautifulSoup/)
 
 ### **NumPy**
-- **Version**: 2.3.2+
+- **Version**: 2.0.0+
 - **Purpose**: Numerical computing and array operations
 - **Key Features**:
   - Vector operations
@@ -138,6 +176,16 @@ This document provides detailed information about the technologies, frameworks, 
   - Array manipulation
   - Performance optimization
 - **Documentation**: [https://numpy.org/](https://numpy.org/)
+
+### **Sentence Transformers**
+- **Version**: 5.0.0+
+- **Purpose**: State-of-the-art sentence embeddings
+- **Key Features**:
+  - Pre-trained embedding models
+  - Semantic similarity search
+  - Multilingual support
+  - Easy fine-tuning
+- **Documentation**: [https://www.sbert.net/](https://www.sbert.net/)
 
 ## 🔧 Utilities
 
@@ -152,7 +200,7 @@ This document provides detailed information about the technologies, frameworks, 
 - **Documentation**: [https://github.com/openai/tiktoken](https://github.com/openai/tiktoken)
 
 ### **Python-dotenv**
-- **Version**: 1.1.1+
+- **Version**: 1.1.0+
 - **Purpose**: Environment variable management
 - **Key Features**:
   - .env file loading
@@ -162,7 +210,7 @@ This document provides detailed information about the technologies, frameworks, 
 - **Documentation**: [https://github.com/theskumar/python-dotenv](https://github.com/theskumar/python-dotenv)
 
 ### **Pydantic**
-- **Version**: 2.0.0+
+- **Version**: 2.10.0+
 - **Purpose**: Data validation and settings management
 - **Key Features**:
   - Type validation
@@ -170,6 +218,68 @@ This document provides detailed information about the technologies, frameworks, 
   - Settings management
   - Error handling
 - **Documentation**: [https://docs.pydantic.dev/](https://docs.pydantic.dev/)
+
+### **YouTube Transcript API**
+- **Version**: 1.2.0+
+- **Purpose**: Extract transcripts from YouTube videos
+- **Key Features**:
+  - Automatic transcript extraction
+  - Multiple language support
+  - Timestamp information
+  - Easy integration
+- **Documentation**: [https://github.com/jdepoix/youtube-transcript-api](https://github.com/jdepoix/youtube-transcript-api)
+
+### **PyTube**
+- **Version**: 15.0.0+
+- **Purpose**: YouTube video downloading and processing
+- **Key Features**:
+  - Video download capabilities
+  - Audio extraction
+  - Metadata retrieval
+  - Stream selection
+- **Documentation**: [https://github.com/pytube/pytube](https://github.com/pytube/pytube)
+
+## 🧠 Advanced RAG Components
+
+### **LlamaIndex**
+- **Version**: 0.13.0+
+- **Purpose**: Advanced data framework for LLM applications
+- **Key Features**:
+  - Document processing pipelines
+  - Advanced indexing strategies
+  - Query engines and retrievers
+  - Structured data handling
+- **Documentation**: [https://docs.llamaindex.ai/](https://docs.llamaindex.ai/)
+
+### **Fast PyTorch K-means**
+- **Version**: 0.2.0+
+- **Purpose**: High-performance clustering for document organization
+- **Key Features**:
+  - GPU-accelerated clustering
+  - Large-scale data processing
+  - Integration with PyTorch
+  - Efficient memory usage
+- **Documentation**: [https://github.com/facebookresearch/fast-pytorch-kmeans](https://github.com/facebookresearch/fast-pytorch-kmeans)
+
+### **ONNX**
+- **Version**: 1.19.0+
+- **Purpose**: Model interoperability and optimization
+- **Key Features**:
+  - Model format standardization
+  - Cross-platform deployment
+  - Performance optimization
+  - Hardware acceleration
+- **Documentation**: [https://onnx.ai/](https://onnx.ai/)
+
+### **Srsly**
+- **Version**: 2.5.0+
+- **Purpose**: Fast serialization and deserialization
+- **Key Features**:
+  - High-performance JSON/MessagePack
+  - Memory-efficient operations
+  - Python/Cython implementation
+  - Integration with spaCy ecosystem
+- **Documentation**: [https://github.com/explosion/srsly](https://github.com/explosion/srsly)
 
 ## 🔒 Security & Configuration
 
@@ -180,6 +290,7 @@ This document provides detailed information about the technologies, frameworks, 
 
 ### **API Key Management**
 - **Google Gemini API**: Primary LLM and embedding provider
+- **Cohere API**: Alternative LLM provider and reranking
 - **LangSmith API**: Optional tracing and monitoring
 - **Tavily API**: Web search capabilities
 
@@ -195,9 +306,10 @@ pip install -r requirements.txt
 
 This project is tested with:
 - **Python**: 3.13+
-- **LangChain**: 0.3.27+
-- **Google Generative AI**: 0.8.5+
-- **ChromaDB**: 1.0.20+
+- **LangChain**: 0.3.20+
+- **Google Generative AI**: 0.7.0+
+- **ChromaDB**: 1.0.0+
+- **Cohere**: 5.0.0+
 
 ## 🚀 Performance Considerations
 
@@ -206,12 +318,14 @@ This project is tested with:
 - **Caching**: Vector store caching for repeated queries
 - **Streaming**: Real-time response generation
 - **Parallel Processing**: Concurrent document processing
+- **Reranking**: Cohere reranker for improved retrieval quality
 
 ### **Scalability Features**
 - **Modular Design**: Easy to scale individual components
 - **Cloud Integration**: Ready for cloud deployment
-- **Database Options**: Support for various vector databases
+- **Database Options**: Support for various vector databases (ChromaDB, FAISS)
 - **Load Balancing**: Built-in retry and error handling
+- **GPU Acceleration**: FAISS and PyTorch K-means for large-scale operations
 
 ## 🔧 Development Workflow
 
@@ -219,13 +333,28 @@ This project is tested with:
 2. **Version Control**: Git for code management
 3. **Testing**: Interactive testing in notebooks
 4. **Monitoring**: LangSmith for production monitoring
+5. **Web Interface**: Streamlit for demo applications
 
 ## 📚 Additional Resources
 
 - **LangChain Documentation**: [https://python.langchain.com/](https://python.langchain.com/)
 - **Google AI Documentation**: [https://ai.google.dev/](https://ai.google.dev/)
 - **ChromaDB Documentation**: [https://docs.trychroma.com/](https://docs.trychroma.com/)
+- **Cohere Documentation**: [https://docs.cohere.ai/](https://docs.cohere.ai/)
+- **LlamaIndex Documentation**: [https://docs.llamaindex.ai/](https://docs.llamaindex.ai/)
+
+## ⚠️ Important Notes
+
+### **Dependency Resolution**
+- **RAGatouille**: Removed due to dependency conflicts with current LangChain versions
+- **Alternative Solutions**: LlamaIndex and custom implementations provide similar functionality
+- **Version Flexibility**: Using minimum version constraints (`>=`) for better compatibility
+
+### **Production Considerations**
+- **RAGatouille Alternative**: Consider using LlamaIndex or custom RAG implementations
+- **Scalability**: FAISS provides high-performance similarity search for large datasets
+- **Monitoring**: LangSmith integration for production monitoring and debugging
 
 ---
 
-*This tech stack is designed for production-ready RAG applications with a focus on scalability, maintainability, and ease of use.*
+*This tech stack is designed for production-ready RAG applications with a focus on scalability, maintainability, and ease of use. The removal of RAGatouille does not impact the core RAG functionality, as alternative solutions are available through the existing packages.*
