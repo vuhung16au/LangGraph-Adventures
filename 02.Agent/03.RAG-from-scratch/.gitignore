@@ -235,6 +235,17 @@ credentials.json
 token.json
 service_account.json
 
+# ragatouille caches 
+.ragatouille/
+
+# voyager caches 
+.voyager/
+
+# faiss caches 
+.faiss/
+
+# chroma caches 
+.chroma/
 
 # Project specific
 .env.local
