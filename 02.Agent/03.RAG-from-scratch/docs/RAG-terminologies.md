@@ -243,3 +243,4 @@ The process of encoding data to protect it from unauthorized access during stora
 ---
 
 *This glossary covers the most common terms used in RAG systems. The field is rapidly evolving, so new terms and concepts continue to emerge.*
+

@@ -2,6 +2,12 @@
 
 This document provides detailed information about the technologies, frameworks, and tools used in the RAG From Scratch project.
 
+# Notes on the tech stack
+(as of 1 Sep 2025)
+- Lang Studio is not used in this project.
+- LangGraph Cloud is not used in this project. We are using local LangGraph, and no deployment to LangGraph Cloud is needed.
+- LangSmith is used in this project, but it's optional and for monitoring/debugging purposes.
+
 ## 🏗️ Core Framework
 
 ### **LangChain**
