@@ -50,8 +50,8 @@ Thumbs.db
 *.log
 
 # Database
-# *.db
-# *.sqlite3
+*.db
+*.sqlite3
 
 # Vector stores
 chroma_db/
