@@ -2,6 +2,8 @@
 langchain
 langchain-ollama
 langchain-community
+langchain-google-genai
+google-generativeai
 langgraph
 
 # Web scraping and HTTP

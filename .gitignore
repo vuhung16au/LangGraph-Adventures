@@ -50,8 +50,8 @@ Thumbs.db
 *.log
 
 # Database
-*.db
-*.sqlite3
+# *.db
+# *.sqlite3
 
 # Vector stores
 chroma_db/
@@ -66,6 +66,19 @@ tmp/
 temp/
 chat_history.json
 
+
+# Secret files
+
+env.*
+.secrets*
+secrets.*
+*credentials*.json
+*token*.json
+service_account*.json
+*.pem
+*.key
+*.p12
+*.pfx
 
 # Project specific
 Prompt.md
