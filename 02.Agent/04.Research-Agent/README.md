@@ -51,6 +51,7 @@ cd 04.Research-Agent
 
 Create a virtual environment to isolate project dependencies:
 
+(Other version of python3 should work)
 ```bash
 python3.13 -m venv .venv
 ```
@@ -145,7 +146,6 @@ for event in graph.stream({"topic": topic, "max_analysts": max_analysts}, thread
 ```text
 04.Research-Agent/
 ├── Research-Collective.ipynb    # Main notebook with the research system
-├── Prompt.md                    # Project prompts and instructions
 ├── README.md                    # This file
 ├── requirements.txt             # Python dependencies
 ├── LICENSE.md                   # Project license
@@ -161,7 +161,7 @@ for event in graph.stream({"topic": topic, "max_analysts": max_analysts}, thread
 
 ### 1. LLM Setup
 
-- Uses Google's Gemini 2.0 Flash Experimental model
+- Uses Google's Gemini 2.0 Flash model
 - Simple, clean initialization without complex retry logic
 - Integrated with LangChain for structured output generation
 
