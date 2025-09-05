@@ -1,0 +1,12 @@
+langgraph
+langchain_openai
+langchain_community
+langchain_core
+tavily-python
+wikipedia
+python-dotenv
+langchain_google_genai
+jupyter
+ipython
+tenacity
+google-api-core
