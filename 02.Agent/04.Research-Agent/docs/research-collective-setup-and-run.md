@@ -404,24 +404,7 @@ When finished:
 deactivate
 ```
 
-This returns you to your system's default Python environment.
 
-## 📚 Additional Resources
-
-- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
-- [Google Gemini API Docs](https://ai.google.dev/docs)
-- [Tavily API Documentation](https://docs.tavily.com/)
-- [LangSmith Documentation](https://docs.smith.langchain.com/)
-
-## 🆘 Getting Help
-
-If you encounter issues:
-
-1. **Check this guide** for common solutions
-2. **Review error messages** carefully
-3. **Check API dashboards** for quota/credit issues
-4. **Enable debug logging** for detailed information
-5. **Open an issue** in the project repository
 
 ---
 
