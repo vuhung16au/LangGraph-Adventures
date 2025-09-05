@@ -4,9 +4,6 @@ This document defines the key terms, concepts, and terminology used throughout t
 
 ## Core Concepts
 
-### Research Collective
-A multi-agent AI system that automates research processes by creating specialized AI analysts who conduct parallel interviews with expert AIs to gather insights on any given topic.
-
 ### Multi-Agent System
 A system composed of multiple autonomous agents (AI analysts) that work together to achieve a common goal. In this project, each agent has a specific role and perspective on the research topic.
 
@@ -112,19 +109,6 @@ A mechanism for pausing graph execution to allow human input or review before co
 ### Conditional Routing
 Logic that determines the next node to execute based on the current state, enabling dynamic workflow adaptation.
 
-## Output Terms
-
-### Report
-The final synthesized document containing insights from all analyst interviews, formatted with proper structure and citations.
-
-### Section
-A portion of the final report focused on a specific aspect of the research, typically corresponding to one analyst's findings.
-
-### Introduction
-The opening section of the report that provides context and previews the main findings.
-
-### Conclusion
-The closing section of the report that summarizes key insights and findings.
 
 ## API & Integration Terms
 
@@ -153,14 +137,3 @@ A Python operator used in state definitions to specify how multiple values shoul
 
 ### MessagesState
 A specialized state type for managing conversation messages in LangGraph.
-
-## Error Handling Terms
-
-### ResourceExhausted
-A specific type of API error indicating that service quotas or rate limits have been exceeded.
-
-### Exponential Backoff
-A retry strategy where the delay between retry attempts increases exponentially, helping to handle temporary service unavailability.
-
-### Graceful Degradation
-The ability of the system to continue functioning with reduced capabilities when some services are unavailable.
