@@ -6,6 +6,9 @@ langchain-google-genai
 google-generativeai
 langgraph
 
+# Additional dependencies
+trustcall
+
 # Web scraping and HTTP
 beautifulsoup4
 requests
